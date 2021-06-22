@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack{
+//            Header or  footer view goes here
+            Section(header: Text("Header-Title"), footer: Text("Footer-Content")) {
+//                Section View
+                Color.red
+                    .frame(height: 100)
+            }
+        }
     }
 }
 
